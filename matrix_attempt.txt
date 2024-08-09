@@ -1,0 +1,16 @@
+from manim import * 
+
+class EigenValueExtraction(Scene):
+
+	def construct(self):
+		A=Matrix([[1,1],[1,0]])
+		v_0=Matrix([[{F}_{2}],[{F}_{1}]])
+		v_1=Matrix([[1],[1]])
+
+		A.next_to(v_0, left, buff=0.5)
+		v_1.next_to(A, left, buff=0.5)		
+
+
+	self.add(A)
+	self.add(v_0)
+	self.add(v_1)
